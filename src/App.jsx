@@ -65,7 +65,7 @@ function App() {
       <section id="home" className="mx-auto grid min-h-screen max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2">
         <div className="hero-img flex justify-center">
           <img
-            src="/vishal-photo.jpeg"
+            src={`${import.meta.env.BASE_URL}vishal-photo.jpg`}
             alt="Vishal Choudhary"
             className="h-72 w-72 rounded-full border-4 border-white object-cover object-top shadow-xl md:h-96 md:w-96"
           />
@@ -93,7 +93,7 @@ function App() {
               Contact Me
             </a>
 
-            <a href="/vishal_resume1.pdf" download className="rounded-lg border border-slate-400 px-6 py-3 text-center font-semibold text-slate-700 hover:border-blue-600 hover:text-blue-600">
+            <a href={`${import.meta.env.BASE_URL}vishal_resume1.pdf`} download className="rounded-lg border border-slate-400 px-6 py-3 text-center font-semibold text-slate-700 hover:border-blue-600 hover:text-blue-600">
               Download Resume
             </a>
           </div>
